@@ -10,7 +10,14 @@ object Application extends Controller {
   }
 
   def getName = Action {
-    Ok("John")
+    Ok("Mary")
   }
+
+  def getPicture(name: String) = Action{
+
+    Ok( name +  ".jpg")
+
+  }
+
 
 }

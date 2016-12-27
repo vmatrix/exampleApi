@@ -3,6 +3,9 @@ package controllers
 import play.api._
 import play.api.mvc._
 
+case class Person(name: String, country: String, id: Int)
+
+
 object Application extends Controller {
 
   def index = Action {

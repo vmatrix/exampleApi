@@ -9,8 +9,10 @@ GET     /name                       controllers.Application.getName
 
 #GET 	/pics/$name<\w{1,20}\.(jpg|png)>	controllers.Application.getPicture(name: String)
 
-GET 	/pics/$name<\w{1,20}>                 controllers.Application.getPicture(name: String)
+GET 	/pics/$name<\w{1,20}>        controllers.Application.getPicture(name: String)
 
+#fibonacci
+GET     /fibo/:num                      controllers.Application.getFibo(num: Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
